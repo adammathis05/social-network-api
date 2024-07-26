@@ -1,4 +1,4 @@
-const { User, Thought } = require("../models");
+const User = require("../models");
 
 const userController = {
   async getUsers(req, res) {
@@ -61,4 +61,4 @@ const userController = {
   },
 };
 
-module.exports = { userController }; 
+module.exports = userController;
