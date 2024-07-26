@@ -3,8 +3,6 @@ const apiRoutes = require("./api");
 
 router.use("/api", apiRoutes);
 
-router.use((req, res) => {
-  return res.send("Route does not exist!");
-});
+router.use((req, res) => res.send("Route does not exist!"));
 
 module.exports = router;
